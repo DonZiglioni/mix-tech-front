@@ -97,7 +97,7 @@ const CoursesPage = () => {
 
                             </div>
                         </div>
-                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('http://localhost:3000')}>
+                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
                             <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
@@ -117,7 +117,7 @@ const CoursesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('http://localhost:3000')}>
+                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
                             <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
@@ -137,7 +137,7 @@ const CoursesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('http://localhost:3000')}>
+                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
                             <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
@@ -157,7 +157,7 @@ const CoursesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('http://localhost:3000')}>
+                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
                             <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
@@ -177,7 +177,7 @@ const CoursesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('http://localhost:3000')}>
+                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
                             <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
@@ -197,7 +197,7 @@ const CoursesPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('http://localhost:3000')}>
+                        <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
                             <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
