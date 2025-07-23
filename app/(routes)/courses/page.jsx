@@ -55,6 +55,7 @@ const CoursesPage = () => {
                                 <div className='grid mt-5 grid-cols-1 sm:grid-cols-2 p-4 gap-4 h-full w-full'>
                                     <div className='h-full w-full rounded-xl p-8 flex flex-col items-center justify-center shadow-black/50 shadow-md bg-slate-200/70 '>
                                         <h1 className='text-4xl md:text-5xl font-bold text-center'>ALL <br />ACCESS<br /> PASS</h1>
+                                        <p className='text-xs '>Coming soon!</p>
                                     </div>
                                     <div className='h-full w-full sm:rounded-xl shadow-black/50 shadow-md bg-slate-200/70'>
                                         <div className='mt-4 flex flex-col items-center '>
@@ -98,15 +99,15 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
-                            <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
+                            <div className='h-auto w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
-                                    <h1 className='font-bold text-2xl'>
+                                    <h1 className='font-bold text-2xl mt-2'>
                                         Day 1 Audio Engineering
                                     </h1>
-                                    <p className=' text-lg/5'>The basics of amplitude, frequency, and the science of sound</p>
-                                    <img src='/studio-background.png' className='h-50 w-full object-cover shadow-black/50 shadow-md' />
-                                    <div className='flex justify-between pt-2'>
+                                    <p className=' text-lg/5 py-2'>The basics of amplitude, frequency, and the science of sound</p>
+                                    <img src='/comingsoon2.png' className='h-96 w-full object-cover shadow-black/50 shadow-md' />
+                                    <div className='flex justify-between pt-4'>
                                         <div className='bg-teal-600 border-1 shadow-black/50 shadow-md text-shadow-black/90 text-shadow-sm border-purple-900 text-white rounded-2xl px-4 py-1'>
                                             FREE
                                         </div>
@@ -118,15 +119,15 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
-                            <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
+                            <div className='h-auto w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
-                                    <h1 className='font-bold text-2xl'>
+                                    <h1 className='font-bold text-2xl mt-2 '>
                                         Music Business 101
                                     </h1>
-                                    <p className=' text-lg/5'>Mix Techniques' Music Business Masterclass</p>
-                                    <img src='/studio-background2.png' className='h-50 w-full object-cover shadow-black/50 shadow-md' />
-                                    <div className='flex justify-between pt-2'>
+                                    <p className=' text-lg/5 py-2'>Mix Techniques' Music Business Masterclass</p>
+                                    <img src='/comingsoon2.png' className='h-96 w-full object-cover shadow-black/50 shadow-md' />
+                                    <div className='flex justify-between pt-4'>
                                         <div className='bg-teal-600 border-1 shadow-black/50 shadow-md text-shadow-black/90 text-shadow-sm border-purple-900 text-white rounded-2xl px-4 py-1'>
                                             $79.99
                                         </div>
@@ -138,15 +139,15 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
-                            <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
+                            <div className='h-full w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
-                                    <h1 className='font-bold text-2xl'>
+                                    <h1 className='font-bold text-2xl mt-2'>
                                         Audio Engineering 101
                                     </h1>
-                                    <p className=' text-lg/5'>Learn the science of sound and everything you need to begin your career in music or audio engineering</p>
-                                    <img src='/studio-background2.png' className='h-50 w-full object-cover shadow-black/50 shadow-md' />
-                                    <div className='flex justify-between pt-2'>
+                                    <p className=' text-lg/5 py-2'>Learn the science of sound and everything you need to begin your career in music or audio engineering</p>
+                                    <img src='/comingsoon2.png' className='h-96 w-full object-cover shadow-black/50 shadow-md' />
+                                    <div className='flex justify-between pt-4'>
                                         <div className='bg-teal-600 border-1 shadow-black/50 shadow-md text-shadow-black/90 text-shadow-sm border-purple-900 text-white rounded-2xl px-4 py-1'>
                                             $79.99
                                         </div>
@@ -158,15 +159,15 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
-                            <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
+                            <div className='h-auto w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
-                                    <h1 className='font-bold text-2xl'>
+                                    <h1 className='font-bold text-2xl mt-2'>
                                         Mix Techniques I
                                     </h1>
-                                    <p className=' text-lg/5'>The tricks of the trade!  Get started with the beginner's course on mix engineering</p>
-                                    <img src='/studio-background2.png' className='h-50 w-full object-cover shadow-black/50 shadow-md' />
-                                    <div className='flex justify-between pt-2'>
+                                    <p className=' text-lg/5 py-2'>The tricks of the trade!  Get started with the beginner's course on mix engineering</p>
+                                    <img src='/comingsoon2.png' className='h-96 w-full object-cover shadow-black/50 shadow-md' />
+                                    <div className='flex justify-between pt-4'>
                                         <div className='bg-teal-600 border-1 shadow-black/50 shadow-md text-shadow-black/90 text-shadow-sm border-purple-900 text-white rounded-2xl px-4 py-1'>
                                             $79.99
                                         </div>
@@ -178,15 +179,15 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
-                            <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
+                            <div className='h-auto w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
-                                    <h1 className='font-bold text-2xl'>
+                                    <h1 className='font-bold text-2xl mt-2'>
                                         Mix Techniques II
                                     </h1>
-                                    <p className=' text-lg/5'>Continue learning with the intermediate course on mix engineering</p>
-                                    <img src='/studio-background2.png' className='h-50 w-full object-cover shadow-black/50 shadow-md' />
-                                    <div className='flex justify-between pt-2'>
+                                    <p className=' text-lg/5 py-2'>Continue learning with the intermediate course on mix engineering</p>
+                                    <img src='/comingsoon2.png' className='h-96 w-full object-cover shadow-black/50 shadow-md' />
+                                    <div className='flex justify-between pt-4'>
                                         <div className='bg-teal-600 border-1 shadow-black/50 shadow-md text-shadow-black/90 text-shadow-sm border-purple-900 text-white rounded-2xl px-4 py-1'>
                                             $79.99
                                         </div>
@@ -198,15 +199,15 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className='h-full w-full col-span-2 sm:col-span-1 ' onClick={() => router.push('https://academy.mixtechniques.com')}>
-                            <div className='h-96 w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
+                            <div className='h-auto w-full flex flex-col items-center justify-center bg-slate-200/10 backdrop-blur-md  rounded-xl relative shadow-md shadow-black/50 hover:shadow-lg hover:shadow-black/30 '>
                                 <div className='h-5 w-full absolute top-0 left-0 bg-gradient-to-r from-purple-900 to-teal-600 rounded-t-xl ' />
                                 <div className='bg-slate-200/70 h-full w-full flex flex-col justify-evenly p-4 rounded-xl'>
-                                    <h1 className='font-bold text-2xl'>
+                                    <h1 className='font-bold text-2xl mt-2'>
                                         Songwriting and Beginner Music Theory
                                     </h1>
-                                    <p className=' text-lg/5'>A free course to learn song structure, keys, chords and more!</p>
-                                    <img src='/studio-background2.png' className='h-50 w-full object-cover shadow-black/50 shadow-md' />
-                                    <div className='flex justify-between pt-2'>
+                                    <p className=' text-lg/5 py-2'>A free course to learn song structure, keys, chords and more!</p>
+                                    <img src='/comingsoon2.png' className='h-96 w-full object-cover shadow-black/50 shadow-md' />
+                                    <div className='flex justify-between pt-4'>
                                         <div className='bg-teal-600 border-1 shadow-black/50 shadow-md text-shadow-black/90 text-shadow-sm border-purple-900 text-white rounded-2xl px-4 py-1'>
                                             FREE
                                         </div>
@@ -226,6 +227,7 @@ const CoursesPage = () => {
                 <div className='h-full w-full '>
                     <div className='h-full w-full   rounded-xl flex flex-col items-center justify-evenly shadow-lg shadow-black/50 p-4 relative'>
                         <img src='/wave-bg.jpg' className='absolute top-0 left-0 h-full w-full object-cover' />
+                        <div className='absolute top-0 left-0 h-full w-full bg-black/50' />
                         <h1 className='text-4xl lg:text-5xl font-extrabold text-center z-50 text-slate-200 text-shadow-black text-shadow-lg'>
                             Login to see the full course catalog!
                         </h1>
