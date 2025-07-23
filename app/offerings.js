@@ -2,7 +2,7 @@ export const offerings = [
     {
         title: "Master of Mix Techniques",
         description: "The only trusted certification for professional mix engineers",
-        image: '/studio-background.png',
+        image: '/comingsoon2.png',
         link: '/certificate',
     },
     {
@@ -14,13 +14,13 @@ export const offerings = [
     {
         title: "All Access Pass",
         description: "Gain access to every online course offered through Mix Techniques",
-        image: '/studio-background3.png',
+        image: '/comingsoon2.png',
         link: '/courses',
     },
     {
         title: "Free Courses",
         description: "Several courses in our collection are free, try them out now!",
-        image: '/studio-background.png',
+        image: '/comingsoon2.png',
         link: '/courses',
     },
 ]

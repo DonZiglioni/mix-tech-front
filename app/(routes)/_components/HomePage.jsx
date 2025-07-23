@@ -51,12 +51,13 @@ const HomePage = () => {
                 <div className='h-full place-self-center flex w-full bg-slate-200'>
                     <div className='grid w-full mx-4 lg:mx-20 xl:mx-60 grid-cols-1 lg:grid-cols-2'>
                         <div className='h-full w-full '>
-                            {/* <AuroraBackground /> */}
                             <div className='h-full w-full p-4 relative'>
                                 <h1 className='lg:text-4xl text-2xl font-bold mt-4'>
                                     AUDIO <br />ENGINEERING,<br />MIXING,<br />&<br />MUSIC<br /> EDUCATION<br />
                                 </h1>
-                                <Logo width={125} height={125} classname={'absolute top-10 lg:right-10 right-0 bg-transparent'} />
+
+                                {/* <Logo width={125} height={125} classname={'absolute top-10 lg:right-10 right-0 bg-transparent'} />
+                            */}
                                 <p className='mt-4'>
                                     We offer a plethora of on-demand courses, live workshops, and professional certificates.
                                     Mix Techniques is dedicated to developing high-quality, in-depth, and interactive educational experiences unlinke any other source.
