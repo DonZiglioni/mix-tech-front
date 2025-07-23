@@ -38,7 +38,7 @@ const CoursesPage = () => {
                             </div>
                         </div>
                         <div className=' w-[50%] hidden lg:flex flex-col items-center justify-center  ' >
-                            <img src={'/hero-img1.png'} className=' h-75 w-75  object-cover rounded-full ' />
+                            <img src={'/badge1.png'} className=' h-75 w-75  object-cover rounded-full ' />
                         </div>
                     </div>
                 </div>
