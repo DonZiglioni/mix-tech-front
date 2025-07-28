@@ -2,25 +2,25 @@ export const offerings = [
     {
         title: "Master of Mix Techniques",
         description: "The only trusted certification for professional mix engineers",
-        image: '/comingsoon2.png',
+        image: '/badge1.png',
         link: '/certificate',
     },
     {
-        title: "Songwriting Workshops",
+        title: "Live Workshops",
         description: "Discover the various techniques of songwriting in an online classroom setting",
-        image: '/comingsoon2.png',
-        link: null,
+        image: '/class3.png',
+        link: '/workshops',
     },
     {
         title: "All Access Pass",
         description: "Gain access to every online course offered through Mix Techniques",
-        image: '/comingsoon2.png',
+        image: '/pass.png',
         link: '/courses',
     },
     {
-        title: "Free Courses",
+        title: "Private Lessons",
         description: "Several courses in our collection are free, try them out now!",
-        image: '/comingsoon2.png',
+        image: '/lesson2.png',
         link: '/courses',
     },
 ]

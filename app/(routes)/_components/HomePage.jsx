@@ -108,7 +108,7 @@ const HomePage = () => {
                                                 <div className=' h-full w-[15%]'>
                                                     <IconClock className='h-8 w-8  stroke-purple-900' />
                                                 </div>
-                                                <p className='w-[90%] col-span-1'>20+ Hours of On-Demand Training</p>
+                                                <p className='w-[90%] col-span-1'>120+ Hours of On-Demand Training</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
@@ -126,7 +126,7 @@ const HomePage = () => {
                                                 <div className=' h-full w-[15%]'>
                                                     <IconMusic className='h-8 w-8  stroke-purple-900' />
                                                 </div>
-                                                <p className='w-[90%] col-span-1'>Weekend Workshops</p>
+                                                <p className='w-[90%] col-span-1'>Live Workshops</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
@@ -226,16 +226,16 @@ const HomePage = () => {
                     </div>
                 </ParallaxBanner>
             </section>
-            <section className='h-auto relative'>
+            <section className='h-auto relative '>
 
-                <img src={'/studio-background6.png'} className='h-full w-full object-cover -z-10 absolute top-0 left-0' />
+                <img src={'/wave-bg.jpg'} className='h-full w-full object-cover bg-black rotate-180 -z-10 absolute top-0 left-0' />
                 <div className='h-full place-self-center flex w-full  '>
-                    <div className=' w-full h-full mx-4 lg:mx-20 xl:mx-60  '>
-                        <div className=' h-full w-full mt-2 p-4'>
-                            <h1 className='text-6xl font-bold w-full text-shadow-lg text-shadow-black/15'>
+                    <div className=' w-full h-full mx-4 lg:mx-20 xl:mx-80  '>
+                        <div className=' h-full w-full mt-2 p-4 '>
+                            <h1 className='text-6xl font-bold w-full text-shadow-lg text-shadow-black/15 text-slate-200'>
                                 Start Learning Now
                             </h1>
-                            <p className='mt-4 font-semibold text-shadow-lg text-shadow-black/5'>
+                            <p className='mt-4 font-semibold text-shadow-lg text-shadow-black/5 text-slate-200'>
                                 Check out our collection of free and paid on-demand courses to start learning today!
                             </p>
                             <div className='w-full h-auto p-4 mt-2 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
@@ -252,7 +252,7 @@ const HomePage = () => {
             </section>
             <section className='h-auto bg-transparent'>
                 <div id='callout' className='h-80 w-full py-4  text-slate-200 flex flex-col items-center justify-evenly relative'>
-                    <img src='/wave-bg.jpg' className='h-full w-full object-cover absolute top-0 left-0 -z-10' />
+                    <img src='/studio-background6.png' className='h-full w-full object-cover absolute top-0 left-0 -z-10' />
                     <div className='h-full w-full bg-black/50 object-cover absolute top-0 left-0 -z-10' />
                     <h1 className='font-extrabold text-3xl md:text-4xl lg:text-5xl text-center text-shadow-lg text-shadow-black'>Ready to Get Started?</h1>
                     <p className='text-light text-sm lg:text-lg text-shadow-lg text-shadow-black'>
