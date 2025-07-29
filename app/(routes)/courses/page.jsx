@@ -16,9 +16,9 @@ const CoursesPage = () => {
                     <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
 
                     <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
-                        <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-10'>
+                        <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-4'>
                             <div>
-                                <h2 className='font-semibold text-lg'>
+                                <h2 className='font-bold text-lg'>
                                     MIX TECHNIQUES COURSES
                                 </h2>
                                 <h1 className='font-bold text-lg lg:text-4xl md:text-3xl sm:text-2xl mt-2'>

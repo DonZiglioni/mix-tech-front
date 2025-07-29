@@ -8,12 +8,12 @@ import { ParallaxBanner } from 'react-scroll-parallax'
 const CertificatePage = () => {
     return (
         <div className='h-auto w-full  '>
-            <div id='header' className='h-100 w-full flex items-center justify-center flex-col overflow-hidden relative'>
-                <img src={'/studio-background.png'} className='w-full h-100 absolute top-0 left-0 object-cover  ' />
-                <div className='w-full h-100 absolute top-0 left-0 object-cover bg-black/70' />
+            <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
+                <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
+                <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
 
-                <div id='content' className='text-slate-200 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
-                    <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-10'>
+                <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
+                    <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-4'>
                         <div>
                             <h2 className='font-bold text-lg'>
                                 MASTER OF MIX TECHNIQUES
@@ -23,12 +23,12 @@ const CertificatePage = () => {
                                 THEN PROVE IT.
                             </h1>
                         </div>
-                        <p>
+                        <p className='mt-4'>
                             Start your journey into mixing and mastering by earning the Master of Mix Techniques certification.
                             Learn the science of sound, get hands-on mixing experience, and earn the certification and demonstrate
                             your expertise to employers.
                         </p>
-                        <div>
+                        <div className='mt-4'>
                             <EnrollButtonReal
                                 borderColor='border-blue-900'
                                 color='bg-slate-900/50'
@@ -42,7 +42,7 @@ const CertificatePage = () => {
                     </div>
                 </div>
             </div>
-            <div id='section2' className='bg-slate-200 h-auto w-full place-self-center flex flex-col px-8 py-4 items-center justify-center '>
+            <div id='section2' className='bg-slate-200 h-auto w-full place-self-center flex flex-col px-4 py-4 items-center justify-center '>
                 <div id='section-content' className='h-auto w-full flex flex-col items-center justify-center mx-4 lg:px-20 xl:px-60 '>
                     <div className=' h-auto w-full space-y-20 gap-x-4  grid grid-cols-1 lg:grid-cols-3 '>
                         <div className=' h-full flex flex-col justify-evenly  px-4 lg:col-span-2'>
@@ -50,40 +50,56 @@ const CertificatePage = () => {
                                 What is the Master of Mix Techniques (MMXT) Certification?
                             </h1>
                             <p>
-                                The Master of Mix Techniques™ (MMXT) certification is an audio engineering experience that will assess a student’s ability to perform an internal network penetration test at an associate level. Students will have two (2) full days to complete the assessment and an additional two (2) days to write a professional report.                            </p>
+                                The Master of Mix Techniques™ (MMXT) certification is an audio engineering experience that will assess
+                                a student's ability to organize, edit, and mix records at a professional level. Students
+                                will participate in several real-world scenarios covering multiple genres, and showcase their abilities to
+                                mix in a fast-paced and constantly evolving industry.
+                            </p>
                             <h2 className='text-2xl font-bold'>
-                                How to Pass the MMXT Exam?
+                                How to Pass the MMXT Course?
                             </h2>
-                            <p>
+                            <div>
                                 In order to receive the certification, a student must:
                                 <div className='flex mt-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
-                                    Provide a detailed, professionally written report.
+                                    <IconDirectionSignFilled className='mr-4 h-8 min-w-8 fill-blue-900' />
+                                    Submit all mixes within the given deadlines.
+                                </div>
+                                <div className='flex pl-4 items-center w-full'>
+                                    <IconDirectionSignFilled className='mr-4 h-8 min-w-8 fill-blue-900' />
+                                    Maintain a minimum 3.0 GPA upon graduation.
                                 </div>
                                 <div className='flex mb-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
-                                    Provide a detailed, professionally written report.
+                                    <IconDirectionSignFilled className='h-8 min-w-8 mr-4 fill-blue-900' />
+                                    Respond to all 'client' requests promptly and professionally.
                                 </div>
-                                TCM Security course vouchers come with 12 months of access to the training materials the exam is based on. Access begins on the day the voucher is purchased.
-                            </p>
+                                MMXT course vouchers come with 12 months of access to the training materials the exam is based on.  Access begins on the day the voucher is purchased.
+                            </div>
                             <h2 className='text-2xl font-bold'>
                                 Master of Mix Techniques Course Format
                             </h2>
                             <p>
                                 The MMXT Course was designed to teach students how to apply their skills in real-world situations. This is not your normal audio enginnering college. Our course is an experience that is similar to what you will be asked to do in a professional environment.
                                 <div className='flex mt-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
+                                    <IconDirectionSignFilled className='mr-4 h-8 min-w-8 fill-blue-900' />
                                     Knowledge AND Hands-On Experience.
                                 </div>
+                                <div className='flex pl-4 items-center w-full'>
+                                    <IconDirectionSignFilled className='mr-4 h-8 min-w-8 fill-blue-900' />
+                                    In-person classes are on Saturdays from 8am - 4pm MST(10am - 6pm EST).
+                                </div>
+                                <div className='flex pl-4 items-center w-full'>
+                                    <IconDirectionSignFilled className='mr-4 h-8 min-w-8 fill-blue-900' />
+                                    Online modules and mixing assignments with feedback.
+                                </div>
                                 <div className='flex mb-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
+                                    <IconDirectionSignFilled className=' h-8 min-w-8 mr-4 fill-blue-900' />
                                     12 months of career guidance offered.
                                 </div>
                             </p>
                         </div>
                         <div id='shadowed-container' className=' h-auto text-base/5 w-full'>
                             <div className='h-full w-full flex items-center justify-center py-4 '>
-                                <div className=' w-full h-full flex flex-col gap-y-2 bg-slate-100 rounded-lg shadow-black/50 shadow-lg p-4'>
+                                <div className=' w-full h-full flex justify-evenly flex-col gap-y-2 bg-slate-100 rounded-lg shadow-black/50 shadow-lg p-4'>
                                     <div>
                                         <h2 className='text-2xl font-bold'>WHAT IS INCLUDED</h2>
                                         <div className='font-semibold flex flex-col gap-y-2 mt-2'>
@@ -181,16 +197,16 @@ const CertificatePage = () => {
                         { image: '/studio3kroom.png', speed: 30, },
                         { image: '/studio3kboard.png', speed: 20 },
                     ]}
-                    className="aspect-[2/1] h-[50vh] relative"
+                    className="aspect-[2/1] md:h-[50vh] h-[60vh] relative"
                 >
                     <div className='absolute inset-0 text-slate-200 flex flex-col items-center justify-center h-full w-full bg-black/50'>
-                        <h1 className='p-4 text-2xl md:text-4xl font-extrabold text-center'>
+                        <h1 className='p-4 md:mt-0 mt-4 text-2xl md:text-4xl font-extrabold text-center'>
                             The future of sonic quality depends on YOU
                         </h1>
                         <h1 className='p-4 text-xl  font-bold text-center'>
                             All Mix Techniques graduates will have the expertise, experience, and confidence to:
                         </h1>
-                        <ul className='list-disc w-full flex flex-col px-6 ml-4 md:items-center'>
+                        <ul className='list-disc w-full flex flex-col px-6 ml-4 md:items-center pb-8'>
                             <li>Deliver Excellent Quality Mixes Everytime</li>
                             <li>Begin mixing professionally for independent and major label artists</li>
                             <li>Confidently showcase your mixes to anyone</li>

@@ -7,7 +7,7 @@ export const offerings = [
     },
     {
         title: "Live Workshops",
-        description: "Discover the various techniques of songwriting in an online classroom setting",
+        description: "Learn from several topics offered in an online classroom setting",
         image: '/badges/badgesLive.png',
         link: '/workshops',
     },
@@ -19,7 +19,7 @@ export const offerings = [
     },
     {
         title: "Private Lessons",
-        description: "Several courses in our collection are free, try them out now!",
+        description: "One-on-one lessons specified to your learning needs",
         image: '/badges/lessons2.png',
         link: '/courses',
     },
