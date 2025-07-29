@@ -21,7 +21,7 @@ export const offerings = [
         title: "Private Lessons",
         description: "One-on-one lessons specified to your learning needs",
         image: '/badges/lessons2.png',
-        link: '/courses',
+        link: '/lessons',
     },
 ]
 
