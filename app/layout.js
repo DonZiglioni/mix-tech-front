@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
       </head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
         <Providers>
           <Navbar />

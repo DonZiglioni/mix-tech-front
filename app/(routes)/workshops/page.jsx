@@ -4,6 +4,27 @@ import EnrollButtonReal from '../../_components/EnrollButtonReal'
 import { IconAward, IconDeviceLaptop, IconDeviceSpeaker, IconHeadphones, IconMedal, IconSchool, IconUsersGroup } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
 
+const workshopList = [
+    {
+        title: 'LIVE: Audio Engineering 101',
+        image: '/dragonLive.png',
+        description: 'This four-day live audio engineer training dives deep into the characteristics of sound,analog and digital audio, signal flow, signal processing, recording, and more. Learn audio engineering in an interactive and hands-on experince from professional audio engineers.',
+        link: `/workshop/audio101`,
+    },
+    {
+        title: 'LIVE: Advanced Mix Techniques',
+        image: '/lionLive.png',
+        description: 'This four-day live mix engineer training dives deep into finding inspiration, crafting melodies, song structures, and more.  Be confident in your ability to write amazing songs effortlessly.',
+        link: `/workshop/mixtechniques1`,
+    },
+    {
+        title: 'LIVE: Songwriting 101',
+        image: '/gorillaLive.png',
+        description: 'This four-day live songwriting training dives deep into finding inspiration, crafting melodies, song structures, and more.  Be confident in your ability to write amazing songs effortlessly.',
+        link: `/workshop/songwriting`,
+    },
+]
+
 const WorkshopPage = () => {
     const router = useRouter()
     return (
@@ -46,104 +67,27 @@ const WorkshopPage = () => {
                 </div>
             </section>
             <section className='h-auto w-full relative'>
-                <img src={'/studio-background6.png'} className=' h-full w-full -z-20 object-cover absolute top-0 left-0' />
-                <div className=' h-full w-full -z-10 bg-slate-200/70 object-cover absolute top-0 left-0' />
-                <div className='lg:mx-60 md:mx-40 p-4 pb-10'>
+                <img src={'/black-bg1.png'} className=' h-full w-full -z-20 object-cover absolute top-0 left-0' />
 
-                    <h1 className='text-4xl font-extrabold text-black mt-2'>
+                <div className='lg:mx-60 md:mx-40 p-4 pb-10 text-slate-200 text-shadow-black text-shadow-lg'>
+
+                    <h1 className='text-4xl font-extrabold  mt-2'>
                         Our Live Training Classes
                     </h1>
-                    <h2 className='text-xl  text-black mt-4'>
+                    <h2 className='text-xl   mt-4'>
                         Mix Techniques offers a variety of mixing, mastering, and audio engineering live trainings that aren't just lectures. You'll get hands-on, real-world experience that will help you pursue certifications and move your career forward.
                     </h2>
                     <div className='h-auto w-full mt-8'>
                         <div className='grid grid-cols-1 md:grid-cols-2 w-full h-auto gap-8'>
-                            <div id='grid-item' className='h-auto w-full pb-2   bg-slate-200/30 backdrop-blur-sm rounded-lg shadow-lg shadow-black/50'>
-                                <div className='h-40 w-full relative'>
-                                    <img src={'/live.png'} className='h-full w-full object-cover absolute top-0 left-0 rounded-t-md' />
-                                </div>
-                                <div className='h-auto w-full p-2 rounded-lg flex flex-col '>
-                                    <h2 className='font-bold text-lg px-2'>
-                                        LIVE: Audio Engineering 101
-                                    </h2>
-                                    <p className='text-base/5 px-2 h-auto mt-2'>
-                                        This four-day live audio engineer training dives deep into the characteristics of sound,
-                                        analog and digital audio, signal flow, signal processing, recording, and more.
-                                        Learn audio engineering in an interactive and hands-on experince from professional audio engineers.
-                                    </p>
-                                    <button
-                                        onClick={() => router.push(`/workshop/songwriting`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
-                                        Learn More
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div id='grid-item' className='h-auto w-full  bg-slate-200/30 backdrop-blur-sm  pb-2 rounded-lg shadow-lg shadow-black/50'>
-                                <div className='h-40 w-full relative'>
-                                    <img src={'/studio-background.png'} className='h-full w-full object-cover absolute top-0 left-0 rounded-t-md' />
-
-                                </div>
-                                <div className='h-auto w-full p-2 flex flex-col '>
-                                    <h2 className='font-bold text-lg px-2'>
-                                        LIVE: Mix Techniques I
-                                    </h2>
-                                    <p className='text-base/5 px-2 h-auto mt-2'>
-                                        This four-day live mix engineer training dives deep into finding inspiration, crafting melodies, song structures, and more.
-                                        Be confident in your ability to write amazing songs effortlessly.
-                                    </p>
-                                    <button
-                                        onClick={() => router.push(`/workshop/mixtechniques1`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
-                                        Learn More
-
-                                    </button>
-                                </div>
-                            </div>
-                            <div id='grid-item' className='h-auto w-full  bg-slate-200/30 backdrop-blur-sm pb-2  rounded-lg shadow-lg shadow-black/50'>
-                                <div className='h-40 w-full relative'>
-                                    <img src={'/writing2.png'} className='h-full w-full object-cover  absolute top-0 left-0 rounded-t-md' />
-
-                                </div>
-                                <div className='h-auto w-full  p-2 rounded-lg flex flex-col '>
-                                    <h2 className='font-bold text-lg px-2'>
-                                        LIVE: Songwriting 101
-                                    </h2>
-                                    <p className='text-base/5 px-2 h-auto mt-2'>
-                                        This four-day live songwriting training dives deep into finding inspiration, crafting melodies, song structures, and more.
-                                        Be confident in your ability to write amazing songs effortlessly.
-                                    </p>
-                                    <button
-
-                                        onClick={() => router.push(`/workshop/songwriting`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
-                                        Learn More
-
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div id='grid-item' className='h-auto w-full  bg-slate-200/30 backdrop-blur-sm pb-2   rounded-lg shadow-lg shadow-black/50'>
-                                <div className='h-40 w-full relative'>
-                                    <img src={'/comingsoon2.png'} className='h-full w-full object-cover absolute top-0 left-0 rounded-t-md' />
-
-                                </div>
-                                <div className='h-auto w-full p-2 flex flex-col '>
-                                    <h2 className='font-bold text-lg px-2'>
-                                        LIVE: TBA
-                                    </h2>
-                                    <p className='text-base/5 px-2 h-auto mt-2'>
-                                        This four-day live course is soon bo be announced!
-                                    </p>
-                                    <button
-
-                                        onClick={() => router.push(`/workshop/songwriting`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
-                                        Learn More
-
-                                    </button>
-                                </div>
-                            </div>
+                            {workshopList.map((workshop, index) => (
+                                <WorkshopCard
+                                    key={index}
+                                    title={workshop.title}
+                                    image={workshop.image}
+                                    description={workshop.description}
+                                    link={workshop.link}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -272,3 +216,35 @@ const WorkshopPage = () => {
 }
 
 export default WorkshopPage
+
+const WorkshopCard = ({
+    title,
+    image,
+    description,
+    link,
+}) => {
+    const router = useRouter()
+    return (
+        <div id='grid-item'
+            onClick={() => router.push(link)}
+            className='h-auto w-full pb-2 relative border-blue-900/50 border-1 hover:shadow-blue-900/50 bg-slate-200/10 backdrop-blur-sm rounded-lg shadow-lg shadow-black/50'>
+            <div className='relative rounded-t-lg h-[200px] w-full bg-black'>
+                <img src={image} className='h-full w-full object-contain absolute top-0 left-0 rounded-lg' />
+            </div>
+
+            <div className='h-auto w-full p-2 rounded-lg flex flex-col '>
+                <h2 className='font-bold text-lg px-2'>
+                    {title}
+                </h2>
+                <p className='text-base/5 px-2 h-auto mt-2'>
+                    {description}
+                </p>
+                <button
+                    onClick={() => router.push(link)}
+                    className='text-slate-200 py-2 ml-2 mt-4 px-2 w-[50%] h-auto rounded-lg text-shadow-lg text-shadow-black/50 border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-blue-900 shadow-md shadow-black/30'>
+                    Learn More
+                </button>
+            </div>
+        </div>
+    )
+}

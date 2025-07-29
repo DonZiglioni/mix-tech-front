@@ -4,11 +4,16 @@ import Faq from './_components/Faq'
 import { IconDirectionSignFilled, IconSchool, IconDeviceDesktop, IconClockFilled, IconMusic, IconBrowser, IconCloudFilled, IconClock, IconCloud } from '@tabler/icons-react'
 import EnrollButtonReal from '../../_components/EnrollButtonReal'
 import { ParallaxBanner } from 'react-scroll-parallax'
+import BottomDivider from '../../_components/BottomDivider'
+import TopDivider from '../../_components/TopDivider'
 
 const CertificatePage = () => {
     return (
         <div className='h-auto w-full  '>
             <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
+                <div className='absolute bottom-0 z-50 left-0 h-auto w-full'>
+                    <TopDivider />
+                </div>
                 <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
                 <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
 
@@ -42,8 +47,15 @@ const CertificatePage = () => {
                     </div>
                 </div>
             </div>
-            <div id='section2' className='bg-slate-200 h-auto w-full place-self-center flex flex-col px-4 py-4 items-center justify-center '>
-                <div id='section-content' className='h-auto w-full flex flex-col items-center justify-center mx-4 lg:px-20 xl:px-60 '>
+            <div id='section2' className='text-slate-200 h-auto w-full relative place-self-center flex flex-col px-4 py-4 items-center justify-center '>
+                <img src={'/black-bg1.png'} className='w-full h-full absolute top-0 left-0 object-cover -z-50 ' />
+                <div className='absolute bottom-0 left-0 h-auto w-full'>
+                    <TopDivider />
+                </div>
+                <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div>
+                <div id='section-content' className='h-auto w-full flex flex-col my-8 items-center justify-center mx-4 lg:px-20 xl:px-60 '>
                     <div className=' h-auto w-full space-y-20 gap-x-4  grid grid-cols-1 lg:grid-cols-3 '>
                         <div className=' h-full flex flex-col justify-evenly  px-4 lg:col-span-2'>
                             <h1 className='text-4xl font-bold'>
@@ -98,8 +110,8 @@ const CertificatePage = () => {
                             </p>
                         </div>
                         <div id='shadowed-container' className=' h-auto text-base/5 w-full'>
-                            <div className='h-full w-full flex items-center justify-center py-4 '>
-                                <div className=' w-full h-full flex justify-evenly flex-col gap-y-2 bg-slate-100 rounded-lg shadow-black/50 shadow-lg p-4'>
+                            <div className='h-full w-full flex items-center justify-center py-4 px-2'>
+                                <div className=' w-full h-full flex justify-evenly flex-col gap-y-2 text-slate-900 bg-slate-100 rounded-lg shadow-black/50 shadow-lg p-4'>
                                     <div>
                                         <h2 className='text-2xl font-bold'>WHAT IS INCLUDED</h2>
                                         <div className='font-semibold flex flex-col gap-y-2 mt-2'>
@@ -171,7 +183,7 @@ const CertificatePage = () => {
                         </div>
                     </div>
                     <div className='h-auto p-4 w-full flex items-center flex-col mt-10'>
-                        <div className='border-blue-800 border-6 bg-slate-900 text-slate-200 rounded-lg h-auto w-[100%] lg:w-[80%] p-4 flex-col flex gap-y-4'>
+                        <div className='border-blue-800 border-6 bg-slate-900 text-slate-200 rounded-lg h-auto w-[105%] lg:w-[80%] p-4 flex-col flex gap-y-4'>
                             <h1 className='lg:text-4xl text-2xl font-bold text-center'>
                                 Who should take the MMXT course?
                             </h1>
@@ -191,15 +203,22 @@ const CertificatePage = () => {
                 </div>
             </div>
             <section className='h-auto bg-slate-900'>
+
                 <ParallaxBanner
                     layers={[
                         { image: '/studio3kstars.png', speed: 50 },
                         { image: '/studio3kroom.png', speed: 30, },
                         { image: '/studio3kboard.png', speed: 20 },
                     ]}
-                    className="aspect-[2/1] md:h-[50vh] h-[60vh] relative"
+                    className="aspect-[2/1] md:h-[50vh] h-[70vh] relative"
                 >
                     <div className='absolute inset-0 text-slate-200 flex flex-col items-center justify-center h-full w-full bg-black/50'>
+                        <div className='absolute bottom-0 left-0 h-auto w-full'>
+                            <TopDivider />
+                        </div>
+                        <div className='absolute top-0 left-0 h-auto w-full'>
+                            <BottomDivider />
+                        </div>
                         <h1 className='p-4 md:mt-0 mt-4 text-2xl md:text-4xl font-extrabold text-center'>
                             The future of sonic quality depends on YOU
                         </h1>
@@ -215,14 +234,22 @@ const CertificatePage = () => {
                         </ul>
                     </div>
                 </ParallaxBanner>
+
             </section>
-            <div id='section4' className='h-auto w-full bg-slate-200 flex items-center justify-center flex-col overflow-hidden relative'>
-                <div id='content4' className='text-slate-200 w-full h-full  '>
+            <div id='section4' className='h-auto w-full  flex items-center justify-center flex-col overflow-hidden relative'>
+                <div className='absolute bottom-0 left-0 h-auto w-full'>
+                    <TopDivider />
+                </div>
+                <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div>
+                <img src={'/black-bg1.png'} className='w-full h-full absolute top-0 left-0 object-cover -z-50 ' />
+                <div id='content4' className='text-slate-200 w-full my-8 h-full  '>
                     <div className='flex flex-col items-center w-full h-full px-4 lg:px-20 xl:px-60 '>
-                        <h1 className='p-4 text-2xl  lg:text-4xl text-slate-900 font-extrabold text-center '>
+                        <h1 className='p-4 text-2xl  lg:text-4xl  font-extrabold text-center '>
                             The Master of Mix Techniques is an intesive course filled with valuable knowledge
                         </h1>
-                        <p className='font-bold text-slate-900 px-2'>
+                        <p className='font-bold  px-2'>
                             Here is a basic breakdown of everything the course covers:
                         </p>
                         <div className='h-full w-full grid  grid-cols-1 lg:grid-cols-2 mt-4 text-base/5 gap-y-4 pb-12'>
@@ -232,7 +259,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={1} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Audio Engineering 101</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -243,7 +270,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={2} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Acoustics and Music Business</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -254,7 +281,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={3} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Pro Tools and DAWs</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -265,7 +292,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={4} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Mix Techniques</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -276,7 +303,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={5} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Mix Techniques II</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -287,7 +314,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={6} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Midterm</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -298,7 +325,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={7} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Projects Sim 1</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -309,7 +336,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={8} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Projects Sim 2</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -320,7 +347,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={9} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Advanced Mix Techniques</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -331,7 +358,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={10} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Advanced Mix Techniques II</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -342,7 +369,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={11} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Mastering 101</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>
@@ -353,7 +380,7 @@ const CertificatePage = () => {
                                     <div className='  h-full flex items-center justify-end'>
                                         <ListNumber number={12} />
                                     </div>
-                                    <div className='flex flex-col w-full h-full pl-4 text-slate-900 justify-center'>
+                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
                                         <h2 className='font-extrabold lg:text-lg '>Capstone and Presentations</h2>
                                         <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
                                     </div>

@@ -7,6 +7,8 @@ import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 import EnrollButtonReal from '../../_components/EnrollButtonReal';
 import CoolCard from '../../_components/CoolCard';
 import { offerings } from '../../../app/offerings';
+import TopDivider from '../../_components/TopDivider'
+import BottomDivider from '../../_components/BottomDivider'
 
 import { MuxPlayer } from '@mux/mux-player-react'
 
@@ -49,11 +51,18 @@ const HomePage = () => {
                             <img src={'/mix-logo2.png'} className=' h-75 w-auto  object-contain  ' />
                         </div>
                     </div>
+                    <div className='absolute bottom-0  w-full '>
+                        <TopDivider />
+                    </div>
                 </div>
             </section>
             <section className='h-auto '>
-                <div className='h-full place-self-center flex w-full bg-slate-200'>
-                    <div className='grid w-full mx-4 lg:mx-20 xl:mx-60 grid-cols-1 lg:grid-cols-2'>
+                <div className='h-auto place-self-center flex w-full bg-slate-200 relative'>
+                    <img src={'/black-bg1.png'} className='w-full h-full absolute top-0 left-0 object-cover  ' />
+                    <div className='absolute top-0 left-0 h-auto w-full'>
+                        <BottomDivider />
+                    </div>
+                    <div className='grid w-full my-8 mx-4 lg:mx-20 xl:mx-60 grid-cols-1 lg:grid-cols-2 text-slate-200'>
                         <div className='h-full w-full '>
                             <div className='h-full w-full p-4 relative'>
                                 <h1 className='lg:text-4xl text-2xl font-bold mt-4'>
@@ -102,8 +111,8 @@ const HomePage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='h-full w-full '>
-                            <div className='h-full w-full p-4 '>
+                        <div className='h-full w-full z-10 text-slate-900 '>
+                            <div className='h-full w-full p-4  '>
                                 <div className='h-full w-full lg:px-6 p-4 bg-slate-200 rounded-xl shadow-black/50 shadow-lg '>
                                     <>
                                         <h2 className='text-2xl font-bold'>WHAT WE DO</h2>
@@ -215,8 +224,12 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='absolute bottom-0  w-full '>
+                        <TopDivider />
+                    </div>
                 </div>
             </section>
+
             {/* <section className='h-auto bg-slate-900'>
                 <ParallaxBanner
                     layers={[
@@ -231,16 +244,18 @@ const HomePage = () => {
                 </ParallaxBanner>
             </section> */}
             <section className='h-auto relative '>
-
+                <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div>
                 <img src={'/wave-bg.jpg'} className='h-full w-full object-cover bg-black rotate-180 -z-10 absolute top-0 left-0' />
                 <div className='h-full place-self-center flex w-full bg-black/50  '>
                     <div className=' w-full h-full mx-4 lg:mx-20 xl:mx-80  '>
-                        <div className=' h-full w-full mt-2 p-4 '>
+                        <div className=' h-full w-full my-4 p-4 '>
                             <h1 className='text-6xl font-bold w-full text-shadow-lg text-shadow-black/15 text-slate-200'>
                                 Start Learning Now
                             </h1>
                             <p className='mt-4 font-semibold text-shadow-lg text-shadow-black/5 text-slate-200'>
-                                Check out our collection of free and paid on-demand courses to start learning today!
+                                Check out our collection of on-demand courses, live workshops, and certificates to start learning today!
                             </p>
                             <div className='w-full h-auto p-4 mt-2 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
                                 {offeringArray.map((offer, index) => (
