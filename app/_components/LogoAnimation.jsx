@@ -7,7 +7,8 @@ export default function LogoAnimation() {
     return (
         <div className='flex flex-col h-full w-full justify-center items-center z-20'>
             <div className='relative h-100 w-75   '>
-                <motion.div
+                <Image alt='m' height={500} width={500} src={'/mix-logo2.png'} className='absolute top-0 left-0' />
+                {/* <motion.div
                     initial={{ opacity: 0.0, y: -75, x: 0 }}
                     whileInView={{ opacity: 1, y: 0, x: 0 }}
                     transition={{
@@ -162,7 +163,7 @@ export default function LogoAnimation() {
                     }}
                 >
                     <Image alt='s' height={500} width={500} src={'/s.png'} className='absolute top-0 left-0' />
-                </motion.div>
+                </motion.div> */}
             </div>
             {/* <Header /> */}
         </div>

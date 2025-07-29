@@ -30,15 +30,15 @@ const CertificatePage = () => {
                         </p>
                         <div>
                             <EnrollButtonReal
-                                borderColor='border-purple-900'
+                                borderColor='border-blue-900'
                                 color='bg-slate-900/50'
-                                hoverBorder='hover:border-purple-800'
+                                hoverBorder='hover:border-blue-800'
                                 hoverColor='hover:bg-slate-900/50'
                                 text="Apply Now" />
                         </div>
                     </div>
                     <div className=' w-[50%] hidden lg:flex flex-col items-center justify-center  '>
-                        <img src={'/badge1.png'} className=' h-75 w-75  object-cover rounded-full ' />
+                        <img src={'/badges/mmxt.png'} className=' h-75 w-75  object-cover rounded-full ' />
                     </div>
                 </div>
             </div>
@@ -57,11 +57,11 @@ const CertificatePage = () => {
                             <p>
                                 In order to receive the certification, a student must:
                                 <div className='flex mt-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-purple-900' />
+                                    <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
                                     Provide a detailed, professionally written report.
                                 </div>
                                 <div className='flex mb-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-purple-900' />
+                                    <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
                                     Provide a detailed, professionally written report.
                                 </div>
                                 TCM Security course vouchers come with 12 months of access to the training materials the exam is based on. Access begins on the day the voucher is purchased.
@@ -72,11 +72,11 @@ const CertificatePage = () => {
                             <p>
                                 The MMXT Course was designed to teach students how to apply their skills in real-world situations. This is not your normal audio enginnering college. Our course is an experience that is similar to what you will be asked to do in a professional environment.
                                 <div className='flex mt-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-purple-900' />
+                                    <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
                                     Knowledge AND Hands-On Experience.
                                 </div>
                                 <div className='flex mb-4 pl-4 items-center w-full'>
-                                    <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-purple-900' />
+                                    <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
                                     12 months of career guidance offered.
                                 </div>
                             </p>
@@ -89,25 +89,25 @@ const CertificatePage = () => {
                                         <div className='font-semibold flex flex-col gap-y-2 mt-2'>
                                             <div className=' w-full flex  gap-x-4 items-center '>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconClock className='h-8 w-8  stroke-purple-900' />
+                                                    <IconClock className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>120+ Hours of Training</p>
                                             </div>
                                             <div className=' w-full flex gap-x-4 items-center'>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconDeviceDesktop className='h-8 w-8  stroke-purple-900' />
+                                                    <IconDeviceDesktop className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Hands-on Mixing Labs</p>
                                             </div>
                                             <div className=' w-full flex   gap-x-4 items-center'>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconClock className='h-8 w-8  stroke-purple-900' />
+                                                    <IconClock className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>12 Weeks of hybrid learning with a professional instructor</p>
                                             </div>
                                             <div className=' w-full flex  gap-x-4 items-center'>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconMusic className='h-8 w-8  stroke-purple-900' />
+                                                    <IconMusic className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Multiple Genres Covered (Rock, Rap, Pop, Country, Classical, etc...)</p>
                                             </div>
@@ -118,19 +118,19 @@ const CertificatePage = () => {
                                         <div className='font-semibold flex flex-col gap-y-2 mt-2'>
                                             <div className=' w-full flex  gap-x-4 items-center '>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconDeviceDesktop className='h-8 w-8  stroke-purple-900' />
+                                                    <IconDeviceDesktop className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>8GB RAM & 256GB HDD</p>
                                             </div>
                                             <div className=' w-full flex gap-x-4 items-center'>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconBrowser className='h-8 w-8  stroke-purple-900' />
+                                                    <IconBrowser className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Up-to-Date OS & Internet Browser</p>
                                             </div>
                                             <div className=' w-full flex   gap-x-4 items-center'>
                                                 <div className=' h-full w-[10%]'>
-                                                    <IconCloud className='h-8 w-8  stroke-purple-900' />
+                                                    <IconCloud className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Stable Internet Connection</p>
                                             </div>
@@ -141,8 +141,8 @@ const CertificatePage = () => {
                                     </div>
                                     <div className='w-full flex mt-2 items-center flex-col'>
                                         <EnrollButtonReal
-                                            borderColor='border-purple-900'
-                                            color='bg-purple-900/50'
+                                            borderColor='border-blue-900'
+                                            color='bg-blue-900/50'
                                             hoverBorder='hover:border-teal-700'
                                             hoverColor='hover:bg-teal-900/50'
                                             text="Apply Now" />
@@ -155,7 +155,7 @@ const CertificatePage = () => {
                         </div>
                     </div>
                     <div className='h-auto p-4 w-full flex items-center flex-col mt-10'>
-                        <div className='border-purple-800 border-6 bg-slate-900 text-slate-200 rounded-lg h-auto w-[100%] lg:w-[80%] p-4 flex-col flex gap-y-4'>
+                        <div className='border-blue-800 border-6 bg-slate-900 text-slate-200 rounded-lg h-auto w-[100%] lg:w-[80%] p-4 flex-col flex gap-y-4'>
                             <h1 className='lg:text-4xl text-2xl font-bold text-center'>
                                 Who should take the MMXT course?
                             </h1>
@@ -181,7 +181,7 @@ const CertificatePage = () => {
                         { image: '/studio3kroom.png', speed: 30, },
                         { image: '/studio3kboard.png', speed: 20 },
                     ]}
-                    className="aspect-[2/1] h-[80vh] relative"
+                    className="aspect-[2/1] h-[50vh] relative"
                 >
                     <div className='absolute inset-0 text-slate-200 flex flex-col items-center justify-center h-full w-full bg-black/50'>
                         <h1 className='p-4 text-2xl md:text-4xl font-extrabold text-center'>
@@ -190,7 +190,7 @@ const CertificatePage = () => {
                         <h1 className='p-4 text-xl  font-bold text-center'>
                             All Mix Techniques graduates will have the expertise, experience, and confidence to:
                         </h1>
-                        <ul className='list-disc w-full flex flex-col px-4  items-center'>
+                        <ul className='list-disc w-full flex flex-col px-6 ml-4 md:items-center'>
                             <li>Deliver Excellent Quality Mixes Everytime</li>
                             <li>Begin mixing professionally for independent and major label artists</li>
                             <li>Confidently showcase your mixes to anyone</li>
@@ -347,10 +347,10 @@ const CertificatePage = () => {
                     </div>
                 </div>
             </div>
-            <div id='faqs' className='h-auto w-full bg-gray-800 flex flex-col py-8 items-center p-4 lg:px-20 xl:px-60'>
+            <div id='faqs' className='h-auto w-full bg-black flex flex-col py-8 items-center p-4 lg:px-20 xl:px-60'>
                 <Faq />
             </div>
-            <section className='h-auto bg-transparent'>
+            {/* <section className='h-auto bg-transparent'>
                 <div id='callout' className='h-80 w-full py-4  text-slate-200 flex flex-col items-center justify-evenly relative'>
                     <img src='/wave-bg.jpg' className='h-full w-full object-cover absolute top-0 left-0 -z-10' />
                     <div className='h-full w-full bg-black/50 object-cover absolute top-0 left-0 -z-10' />
@@ -360,8 +360,8 @@ const CertificatePage = () => {
                     </p>
 
                     <EnrollButtonReal
-                        borderColor='border-purple-900'
-                        color='bg-purple-900/50'
+                        borderColor='border-blue-900'
+                        color='bg-blue-900/50'
                         hoverBorder='hover:border-teal-700'
                         hoverColor='hover:bg-teal-900/50'
                         text="Enroll Now"
@@ -369,7 +369,7 @@ const CertificatePage = () => {
 
                     <hr className='border-slate-200/50 w-[80%]' />
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

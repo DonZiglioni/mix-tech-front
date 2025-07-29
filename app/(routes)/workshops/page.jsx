@@ -9,11 +9,11 @@ const WorkshopPage = () => {
     return (
         <div>
             <section className='h-auto '>
-                <div id='header' className='h-100 w-full flex items-center justify-center flex-col overflow-hidden relative'>
-                    <img src={'/studio-background.png'} className='w-full h-100 absolute top-0 left-0 object-cover  ' />
-                    <div className='w-full h-100 absolute top-0 left-0 object-cover bg-black/70' />
+                <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
+                    <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
+                    <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
 
-                    <div id='content' className='text-slate-200 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
+                    <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
                         <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-10'>
                             <div>
                                 <h2 className='font-semibold text-lg'>
@@ -24,23 +24,23 @@ const WorkshopPage = () => {
                                     THEN PROVE IT.
                                 </h1>
                             </div>
-                            <p>
+                            <p className='mt-4'>
                                 Level up your songwrting, production, and mixing skills with LIVE classes by industry-leading instructors.
                                 Designed to teach beginners and music industry professionals practical skills with hands-on learning that
                                 enables real-world professional success.
                             </p>
-                            <div>
+                            <div className='mt-4'>
                                 <EnrollButtonReal
-                                    borderColor='border-purple-900'
+                                    borderColor='border-blue-900'
                                     color='bg-slate-900/50'
-                                    hoverBorder='hover:border-purple-800'
+                                    hoverBorder='hover:border-blue-800'
                                     hoverColor='hover:bg-slate-900/50'
                                     text="Enroll Now"
                                 />
                             </div>
                         </div>
                         <div className=' w-[50%] hidden lg:flex flex-col items-center justify-center  ' >
-                            <img src={'/badge1.png'} className=' h-75 w-75  object-cover rounded-full ' />
+                            <img src={'/badges/badgesLive.png'} className=' h-75 w-auto  object-contain  ' />
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ const WorkshopPage = () => {
                                     </p>
                                     <button
                                         onClick={() => router.push(`/workshop/songwriting`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-purple-900 hover:font-bold hover:bg-purple-300/30 border-black shadow-md shadow-black/30'>
+                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
                                         Learn More
                                     </button>
                                 </div>
@@ -94,7 +94,7 @@ const WorkshopPage = () => {
                                     </p>
                                     <button
                                         onClick={() => router.push(`/workshop/mixtechniques1`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-purple-900 hover:font-bold hover:bg-purple-300/30 border-black shadow-md shadow-black/30'>
+                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
                                         Learn More
 
                                     </button>
@@ -116,7 +116,7 @@ const WorkshopPage = () => {
                                     <button
 
                                         onClick={() => router.push(`/workshop/songwriting`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-purple-900 hover:font-bold hover:bg-purple-300/30 border-black shadow-md shadow-black/30'>
+                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
                                         Learn More
 
                                     </button>
@@ -138,7 +138,7 @@ const WorkshopPage = () => {
                                     <button
 
                                         onClick={() => router.push(`/workshop/songwriting`)}
-                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-purple-900 hover:font-bold hover:bg-purple-300/30 border-black shadow-md shadow-black/30'>
+                                        className='text-black py-2 mt-4 px-2 w-[50%] h-auto rounded-lg border-1 hover:border-blue-900 hover:font-bold hover:bg-blue-300/30 border-black shadow-md shadow-black/30'>
                                         Learn More
 
                                     </button>
@@ -157,7 +157,7 @@ const WorkshopPage = () => {
                         <div id='grid-item' className='w-auto h-auto flex items-center  '>
                             <div className='flex items-center gap-x-4  h-full w-full '>
                                 <div className='h-18 min-w-20 rounded-lg bg-slate-200 flex items-center justify-center'>
-                                    <IconHeadphones className='h-14 w-14 stroke-purple-900' />
+                                    <IconHeadphones className='h-14 w-14 stroke-blue-900' />
                                 </div>
                                 <div className='w-full h-full flex flex-col gap-y-2 '>
                                     <p className='text-slate-200  font-bold text-xl/5'>
@@ -172,7 +172,7 @@ const WorkshopPage = () => {
                         <div id='grid-item' className='w-auto h-auto flex items-center  '>
                             <div className='flex items-center gap-x-4  h-full w-full '>
                                 <div className='h-18 min-w-20 rounded-lg bg-slate-200  flex items-center justify-center'>
-                                    <IconAward className='h-14 w-14 stroke-purple-900' />
+                                    <IconAward className='h-14 w-14 stroke-blue-900' />
                                 </div>
                                 <div className='w-full h-full flex flex-col gap-y-2'>
                                     <p className='text-slate-200  font-bold text-xl/5'>
@@ -187,7 +187,7 @@ const WorkshopPage = () => {
                         <div id='grid-item' className='w-auto h-auto flex items-center  '>
                             <div className='flex items-center gap-x-4  h-full w-full '>
                                 <div className='h-18 min-w-20 rounded-lg bg-slate-200 flex items-center justify-center'>
-                                    <IconUsersGroup className='h-14 w-14 stroke-purple-900' />
+                                    <IconUsersGroup className='h-14 w-14 stroke-blue-900' />
                                 </div>
                                 <div className='w-full h-full flex  flex-col gap-y-2'>
                                     <p className='text-slate-200  font-bold text-xl/5'>
@@ -202,7 +202,7 @@ const WorkshopPage = () => {
                         <div id='grid-item' className='w-auto h-auto flex items-center  '>
                             <div className='flex items-center gap-x-4  h-full w-full '>
                                 <div className='h-18 min-w-20 rounded-lg bg-slate-200 flex items-center justify-center'>
-                                    <IconMedal className='h-14 w-14 stroke-purple-900' />
+                                    <IconMedal className='h-14 w-14 stroke-blue-900' />
                                 </div>
                                 <div className='w-full h-full flex flex-col gap-y-2'>
                                     <p className='text-slate-200  font-bold text-xl/5'>
@@ -217,7 +217,7 @@ const WorkshopPage = () => {
                         <div id='grid-item' className='w-auto h-auto flex items-center  '>
                             <div className='flex items-center gap-x-4  h-full w-full '>
                                 <div className='h-18 min-w-20 rounded-lg bg-slate-200 flex items-center justify-center'>
-                                    <IconDeviceLaptop className='h-14 w-14 stroke-purple-900' />
+                                    <IconDeviceLaptop className='h-14 w-14 stroke-blue-900' />
                                 </div>
                                 <div className='w-full h-full flex flex-col gap-y-2'>
                                     <p className='text-slate-200  font-bold text-xl/5'>
@@ -232,7 +232,7 @@ const WorkshopPage = () => {
                         <div id='grid-item' className='w-auto h-auto flex items-center  '>
                             <div className='flex items-center gap-x-4  h-full w-full '>
                                 <div className='h-18 min-w-20 rounded-lg bg-slate-200 flex items-center justify-center'>
-                                    <IconSchool className='h-14 w-14 stroke-purple-900' />
+                                    <IconSchool className='h-14 w-14 stroke-blue-900' />
                                 </div>
                                 <div className='w-full h-full flex flex-col gap-y-2'>
                                     <p className='text-slate-200  font-bold text-xl/5'>
@@ -247,7 +247,7 @@ const WorkshopPage = () => {
                     </div>
                 </div>
             </section>
-            <section className='h-auto bg-transparent'>
+            {/* <section className='h-auto bg-transparent'>
                 <div id='callout' className='h-80 w-full py-4  text-slate-200 flex flex-col items-center justify-evenly relative'>
                     <img src='/wave-bg.jpg' className='h-full w-full object-cover absolute top-0 left-0 -z-10' />
                     <div className='h-full w-full bg-black/50 object-cover absolute top-0 left-0 -z-10' />
@@ -257,8 +257,8 @@ const WorkshopPage = () => {
                     </p>
 
                     <EnrollButtonReal
-                        borderColor='border-purple-900'
-                        color='bg-purple-900/50'
+                        borderColor='border-blue-900'
+                        color='bg-blue-900/50'
                         hoverBorder='hover:border-teal-700'
                         hoverColor='hover:bg-teal-900/50'
                         text="Enroll Now"
@@ -266,7 +266,7 @@ const WorkshopPage = () => {
 
                     <hr className='border-slate-200/50 w-[80%]' />
                 </div>
-            </section>
+            </section> */}
         </div>
     )
 }

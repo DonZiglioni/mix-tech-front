@@ -16,37 +16,41 @@ const HomePage = () => {
 
     return (
         <div className='h-auto '>
-            <header className='h-120 w-full'>
-                <VideoBackground />
-                <div className=' h-full flex w-full items-center justify-center'>
-                    <div className='h-full w-full flex  items-center justify-center flex-col p-8 md:px-20 lg:px-40 xl:px-60 text-center lg:text-left'>
-                        <div className="flex flex-row items-center justify-center lg:justify-evenly backdrop-blur-sm w-full lg:px-20 h-full  rounded-full  bg-white/0 shadow-lg border-1 border-white/0 shadow-black ">
-                            <div className='flex items-center justify-center'>
+            <section className='h-auto '>
+                <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
+                    <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
+                    <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
 
-                                <div className='flex flex-col justify-evenly text-slate-200 lg:w-[80%] w-full h-full '>
-                                    <div >
-                                        <h2 className='font-extrabold text-lg'>
-                                            MIX TECHNIQUES
-                                        </h2>
-                                        <h1 className='font-bold text-2xl lg:text-4xl md:text-3xl sm:text-2xl mt-2'>
-                                            LEARN HOW TO MIX,<br />
-                                            THEN PROVE IT.
-                                        </h1>
-                                    </div>
-                                    <p className=''>
-                                        Your future in the music industry ignites today!
-                                    </p>
-                                </div>
+                    <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
+                        <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-10'>
+                            <div>
+                                <h2 className='font-semibold text-lg'>
+                                    MIX TECHNIQUES
+                                </h2>
+                                <h1 className='font-bold text-lg lg:text-4xl md:text-3xl sm:text-2xl mt-2'>
+                                    LEARN HOW TO MIX,<br />
+                                    THEN PROVE IT.
+                                </h1>
                             </div>
-                            <div className='flex items-center justify-center'>
-                                <div className='hidden lg:flex h-full w-full flex-col pt-30 items-center justify-center'>
-                                    <LogoAnimation />
-                                </div>
+                            <p className='mt-4'>
+                                Your future in the music industry ignites today!
+                            </p>
+                            <div className='mt-4'>
+                                <EnrollButtonReal
+                                    borderColor='border-blue-900'
+                                    color='bg-slate-900/50'
+                                    hoverBorder='hover:border-blue-800'
+                                    hoverColor='hover:bg-slate-900/50'
+                                    text="Enroll Now"
+                                />
                             </div>
+                        </div>
+                        <div className=' w-[50%] hidden md:flex flex-col items-center justify-center  ' >
+                            <img src={'/mix-logo2.png'} className=' h-75 w-auto  object-contain  ' />
                         </div>
                     </div>
                 </div>
-            </header>
+            </section>
             <section className='h-auto '>
                 <div className='h-full place-self-center flex w-full bg-slate-200'>
                     <div className='grid w-full mx-4 lg:mx-20 xl:mx-60 grid-cols-1 lg:grid-cols-2'>
@@ -65,27 +69,27 @@ const HomePage = () => {
                                 <div className='mt-4'>
                                     Our courses cover topics in:
                                     <div className='flex mt-4 pl-4 items-center w-full font-bold'>
-                                        <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-purple-900' />
+                                        <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
                                         Mixing
                                     </div>
                                     <div className='flex  pl-4 items-center w-full font-bold'>
-                                        <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-purple-900' />
+                                        <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
                                         Mastering
                                     </div>
                                     <div className='flex pl-4 items-center w-full font-bold'>
-                                        <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-purple-900' />
+                                        <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
                                         Audio Engineering
                                     </div>
                                     <div className='flex  pl-4 items-center w-full font-bold'>
-                                        <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-purple-900' />
+                                        <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
                                         Songwriting
                                     </div>
                                     <div className='flex pl-4 items-center w-full font-bold'>
-                                        <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-purple-900' />
+                                        <IconDirectionSignFilled className='mr-4 h-8 w-8 fill-blue-900' />
                                         Production
                                     </div>
                                     <div className='flex mb-4 pl-4 items-center w-full font-bold'>
-                                        <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-purple-900' />
+                                        <IconDirectionSignFilled className=' h-8 w-8 mr-4 fill-blue-900' />
                                         Music Business
                                     </div>
                                     <p className='mt-4'>
@@ -106,43 +110,43 @@ const HomePage = () => {
                                         <div className='font-semibold flex flex-col gap-y-2 mt-4'>
                                             <div className=' w-full flex  '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconClock className='h-8 w-8  stroke-purple-900' />
+                                                    <IconClock className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>120+ Hours of On-Demand Training</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconSchool className='h-8 w-8  stroke-purple-900' />
+                                                    <IconSchool className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Live Instructor-led Learning</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconFileCertificate className='h-8 w-8 stroke-purple-900' />
+                                                    <IconFileCertificate className='h-8 w-8 stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Professional Certificates</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconMusic className='h-8 w-8  stroke-purple-900' />
+                                                    <IconMusic className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Live Workshops</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconDeviceDesktop className='h-8 w-8  stroke-purple-900' />
+                                                    <IconDeviceDesktop className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Online Classrooms</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconBadges className='h-8 w-8  stroke-purple-900' />
+                                                    <IconBadges className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Certified Learning Badges</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconUsers className='h-8 w-8  stroke-purple-900' />
+                                                    <IconUsers className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Growing Professional Community</p>
                                             </div>
@@ -153,43 +157,43 @@ const HomePage = () => {
                                         <div className='font-semibold flex flex-col gap-y-2 mt-4'>
                                             <div className=' w-full flex  '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconSchool className='h-8 w-8  stroke-purple-900' />
+                                                    <IconSchool className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Learn Audio Engineering, Mixing, Mastering, Music Business and more</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconEar className='h-8 w-8  stroke-purple-900' />
+                                                    <IconEar className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Master your craft with hands-on learning</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconPresentationAnalytics className='h-8 w-8  stroke-purple-900' />
+                                                    <IconPresentationAnalytics className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Be able to showcase your skills to potential employers</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconDeviceSpeaker className='h-8 w-8  stroke-purple-900' />
+                                                    <IconDeviceSpeaker className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Understand the science of sound and sonic quality</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconMusic className='h-8 w-8  stroke-purple-900' />
+                                                    <IconMusic className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Begin or further your career in the music industry</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconUsers className='h-8 w-8  stroke-purple-900' />
+                                                    <IconUsers className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Network with a growing community of working professionals and other learners</p>
                                             </div>
                                             <div className=' w-full flex '>
                                                 <div className=' h-full w-[15%]'>
-                                                    <IconHeadphones className='h-8 w-8  stroke-purple-900' />
+                                                    <IconHeadphones className='h-8 w-8  stroke-blue-900' />
                                                 </div>
                                                 <p className='w-[90%] col-span-1'>Earn your Master of Mix Techniques professional certificate, the music industry's
                                                     only online course focused entirely on perfecting your abilities as a mix engineer
@@ -200,8 +204,8 @@ const HomePage = () => {
                                     </>
                                     <div className='flex flex-col items-center justify-center w-full mt-2 py-4'>
                                         <EnrollButtonReal
-                                            borderColor='border-purple-900'
-                                            color='bg-purple-900/50'
+                                            borderColor='border-blue-900'
+                                            color='bg-blue-900/50'
                                             hoverBorder='hover:border-teal-700'
                                             hoverColor='hover:bg-teal-900/50'
                                             text="Enroll Now"
@@ -213,7 +217,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='h-auto bg-slate-900'>
+            {/* <section className='h-auto bg-slate-900'>
                 <ParallaxBanner
                     layers={[
                         { image: '/studio-background3.png', speed: -20 },
@@ -225,11 +229,11 @@ const HomePage = () => {
                         <h1 className="text-4xl text-white font-thin text-center text-shadow-black text-shadow-lg px-4">You can change the world with music</h1>
                     </div>
                 </ParallaxBanner>
-            </section>
+            </section> */}
             <section className='h-auto relative '>
 
                 <img src={'/wave-bg.jpg'} className='h-full w-full object-cover bg-black rotate-180 -z-10 absolute top-0 left-0' />
-                <div className='h-full place-self-center flex w-full  '>
+                <div className='h-full place-self-center flex w-full bg-black/50  '>
                     <div className=' w-full h-full mx-4 lg:mx-20 xl:mx-80  '>
                         <div className=' h-full w-full mt-2 p-4 '>
                             <h1 className='text-6xl font-bold w-full text-shadow-lg text-shadow-black/15 text-slate-200'>
@@ -250,7 +254,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <section className='h-auto bg-transparent'>
+            {/* <section className='h-auto bg-transparent'>
                 <div id='callout' className='h-80 w-full py-4  text-slate-200 flex flex-col items-center justify-evenly relative'>
                     <img src='/studio-background6.png' className='h-full w-full object-cover absolute top-0 left-0 -z-10' />
                     <div className='h-full w-full bg-black/50 object-cover absolute top-0 left-0 -z-10' />
@@ -260,8 +264,8 @@ const HomePage = () => {
                     </p>
 
                     <EnrollButtonReal
-                        borderColor='border-purple-900'
-                        color='bg-purple-900/50'
+                        borderColor='border-blue-900'
+                        color='bg-blue-900/50'
                         hoverBorder='hover:border-teal-700'
                         hoverColor='hover:bg-teal-900/50'
                         text="Enroll Now"
@@ -269,7 +273,7 @@ const HomePage = () => {
 
                     <hr className='border-slate-200/50 w-[80%]' />
                 </div>
-            </section>
+            </section> */}
         </div >
     )
 }

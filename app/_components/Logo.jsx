@@ -6,7 +6,7 @@ const Logo = ({ height, width, classname }) => {
     const router = useRouter()
     return (
         <div onClick={() => { router.push('/') }}>
-            <Image alt={'logo'} src={'/mt-logo-v1.png'} height={height} width={width} className={classname} />
+            <Image alt={'logo'} src={'/mix-logo2.png'} height={height} width={width} className={classname} />
         </div>
     )
 }
