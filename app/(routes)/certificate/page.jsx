@@ -11,11 +11,11 @@ const CertificatePage = () => {
     return (
         <div className='h-auto w-full  '>
             <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
-                <div className='absolute bottom-0 z-50 left-0 h-auto w-full'>
+                {/* <div className='absolute bottom-0 z-50 left-0 h-auto w-full'>
                     <TopDivider />
-                </div>
+                </div> */}
                 <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
-                <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
+                <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/50' />
 
                 <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
                     <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-4'>

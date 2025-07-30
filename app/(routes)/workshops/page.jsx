@@ -3,6 +3,8 @@ import React from 'react'
 import EnrollButtonReal from '../../_components/EnrollButtonReal'
 import { IconAward, IconDeviceLaptop, IconDeviceSpeaker, IconHeadphones, IconMedal, IconSchool, IconUsersGroup } from '@tabler/icons-react';
 import { useRouter } from 'next/navigation';
+import BottomDivider from '../../_components/BottomDivider';
+import TopDivider from '../../_components/TopDivider';
 
 const workshopList = [
     {
@@ -32,7 +34,7 @@ const WorkshopPage = () => {
             <section className='h-auto '>
                 <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
                     <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
-                    <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
+                    <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/50' />
 
                     <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
                         <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-4'>
@@ -66,9 +68,14 @@ const WorkshopPage = () => {
                     </div>
                 </div>
             </section>
-            <section className='h-auto w-full relative'>
+            <section className='h-auto w-full relative py-8'>
                 <img src={'/black-bg1.png'} className=' h-full w-full -z-20 object-cover absolute top-0 left-0' />
-
+                <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div>
+                <div className='absolute bottom-0  w-full '>
+                    <TopDivider />
+                </div>
                 <div className='lg:mx-60 md:mx-40 p-4 pb-10 text-slate-200 text-shadow-black text-shadow-lg'>
 
                     <h1 className='text-4xl font-extrabold  mt-2'>
@@ -92,7 +99,13 @@ const WorkshopPage = () => {
                     </div>
                 </div>
             </section>
-            <section className='h-auto bg-slate-900'>
+            <section className='h-auto bg-slate-900 relative py-8'>
+                <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div>
+                <div className='absolute bottom-0  w-full '>
+                    <TopDivider />
+                </div>
                 <div className='lg:mx-60 md:mx-40 mx-4 py-4 pb-10'>
                     <h1 className='font-extrabold md:text-4xl text-2xl text-slate-200 text-center p-4'>
                         Why Choose Mix Techniques Instructor-Led Training?

@@ -5,6 +5,8 @@ import EnrollButtonReal from '../../_components/EnrollButtonReal'
 import { useRouter } from 'next/navigation'
 import CoolCard from '../../_components/CoolCard'
 import { offerings } from '../../offerings'
+import TopDivider from '../../_components/TopDivider'
+import BottomDivider from '../../_components/BottomDivider'
 
 const courseList = [
     {
@@ -53,7 +55,7 @@ const CoursesPage = () => {
             <section className='h-auto '>
                 <div id='header' className='h-120 -mt-20 w-full flex items-center justify-center flex-col overflow-hidden relative'>
                     <img src={'/studio-background.png'} className='w-full h-120 absolute top-0 left-0 object-cover  ' />
-                    <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/70' />
+                    <div className='w-full h-120 absolute top-0 left-0 object-cover bg-black/50' />
 
                     <div id='content' className='text-slate-200 pt-24 lg:px-10 xl:px-60 w-full px-2 flex flex-row h-100 absolute top-0 left-0  '>
                         <div className='flex flex-col justify-evenly  lg:w-[80%] w-full h-full px-4'>
@@ -88,6 +90,12 @@ const CoursesPage = () => {
             </section>
             <section className='bg-black h-auto flex flex-col items-center relative py-8'>
                 <img src={'black-bg1.png'} className='h-full w-full object-cover rotate-180  absolute top-0 left-0' />
+                <div className='absolute bottom-0 z-50 left-0 h-auto w-full'>
+                    <TopDivider />
+                </div>
+                <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div>
                 <div className='h-full w-full   z-10 flex items-center flex-col'>
                     <div className='grid grid-cols-2 h-full w-full p-4 gap-4 md:px-20  lg:px-40 xl:px-80 mt-4 '>
                         <div className='h-full sm:w-[90%] w-full col-span-2 place-self-center'>
