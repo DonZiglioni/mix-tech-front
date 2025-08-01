@@ -40,7 +40,7 @@ const SongwritingPage = () => {
                             </div>
                         </div>
                         <div className=' w-[50%] hidden lg:flex flex-col items-center justify-center  ' >
-                            <img src={'/dragonLive.png'} className=' h-75 w-75  object-cover rounded-full ' />
+                            <img src={'/gorillaLive.png'} className=' h-75 w-75  object-cover rounded-full ' />
                         </div>
                     </div>
                 </div>
