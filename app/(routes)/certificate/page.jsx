@@ -7,6 +7,69 @@ import { ParallaxBanner } from 'react-scroll-parallax'
 import BottomDivider from '../../_components/BottomDivider'
 import TopDivider from '../../_components/TopDivider'
 
+const classSchedule = [
+    {
+        number: 1,
+        title: 'Audio Engineering 101',
+        description: 'An intense week to ensure competency and comfort with the basics, the foundations, and the core of everything you need to move forward.'
+    },
+    {
+        number: 2,
+        title: 'Acoustics and Music Business',
+        description: 'Setting up your room and environment for mixing excellence, followed by a course on Music Business for Mix Enginners.  You are ready to start your business after this week!'
+    },
+    {
+        number: 3,
+        title: 'Pro Tools and DAWs',
+        description: 'Learn the ins-and-outs of your Digital Audio Workstation of choice.  Understand how much power you have within the software, and know how to use it under pressure.'
+    },
+    {
+        number: 4,
+        title: 'Mix Techniques I',
+        description: 'We are diving straight into mixing records.  With several hands-on mixing exercises and practice songs, your mixes will be on a level you never thought possible this week.'
+    },
+    {
+        number: 5,
+        title: 'Mix Techniques II',
+        description: 'Continue learning as we dive deeper into mixing with more complex situations, larger sessions, and automation.'
+    },
+    {
+        number: 6,
+        title: 'Midterm',
+        description: 'Having the information needed to begin working as a professional mix engineer, you are put to the test and now have your first graded client simulation.'
+    },
+    {
+        number: 7,
+        title: 'Mixing and Project Simulations I',
+        description: 'Now that we have covered the basics, we will be diving deep into practicing, making mistakes, and devolping a successful work ethic for the music industry.'
+    },
+    {
+        number: 8,
+        title: 'Mixing and Project Simulations II',
+        description: 'We contiue to practice, receive feedback, and work hard to master the craft with real-world scenarios and hands-on experience.'
+    },
+    {
+        number: 9,
+        title: 'Advaned Mix Techniques I',
+        description: 'No fluff - All the secrets.  We will learn the advanced techniques that engineers with 5-10 years of experience have learned.  After this week, you will set yourself above 80% of your competition.'
+    },
+    {
+        number: 10,
+        title: 'Advanced Mix Techniques II',
+        description: 'Advanced techniques of engineers with 15-20 years of experience.  By now, you will be extremely confident in your abilities, and are ready to overcome all obstacles during your career.'
+    },
+    {
+        number: 11,
+        title: 'Mastering 101',
+        description: 'Most of the time, your mixes are sent to a mastering engineer.  Sometimes, you are tasked with mastering yourself.  Know exactly what a mastering engineer does, what they are looking for, and how to master efficiently.'
+    },
+    {
+        number: 12,
+        title: 'Capstone and Presentations',
+        description: 'You will participate in a major label mixing scenario, complete with everything we learned about music buisness and contracts.  Passing the capstone will require the client to be more than satified with the mix after multiple revisions, and impressed with your ability to communicate professionally so they may hire you again!'
+    },
+]
+
 const CertificatePage = () => {
     return (
         <div className='h-auto w-full  '>
@@ -253,139 +316,17 @@ const CertificatePage = () => {
                             Here is a basic breakdown of everything the course covers:
                         </p>
                         <div className='h-full w-full grid  grid-cols-1 lg:grid-cols-2 mt-4 text-base/5 gap-y-4 pb-12'>
+                            {classSchedule.map((week, index) => (
+                                <ListCard
+                                    key={index}
+                                    number={week.number}
+                                    title={week.title}
+                                    description={week.description}
+                                />
+                            ))}
 
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={1} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Audio Engineering 101</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={2} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Acoustics and Music Business</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={3} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Pro Tools and DAWs</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={4} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Mix Techniques</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={5} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Mix Techniques II</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={6} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Midterm</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={7} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Projects Sim 1</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={8} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Projects Sim 2</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={9} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Advanced Mix Techniques</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={10} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Advanced Mix Techniques II</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={11} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Mastering 101</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className=' h-full w-full place-self-center flex justify-center items-center'>
-                                <div className='flex flex-row'>
-                                    <div className='  h-full flex items-center justify-end'>
-                                        <ListNumber number={12} />
-                                    </div>
-                                    <div className='flex flex-col w-full h-full pl-4  justify-center'>
-                                        <h2 className='font-extrabold lg:text-lg '>Capstone and Presentations</h2>
-                                        <p className='text-xs font-light lg:text-base/4'>We are going to do a LOT of learning gosh darnit!</p>
-                                    </div>
-                                </div>
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -427,6 +368,26 @@ const ListNumber = ({ number = 0 }) => {
                     <h1 className='text-slate-200 text-shadow-sm text-shadow-slate-900/50 font-extrabold'>
                         {number}
                     </h1>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const ListCard = ({
+    number,
+    title,
+    description
+}) => {
+    return (
+        <div className=' h-full w-full place-self-center flex justify-center items-center'>
+            <div className='flex flex-row'>
+                <div className='  h-full flex items-center justify-end'>
+                    <ListNumber number={number} />
+                </div>
+                <div className='flex flex-col w-full h-full pl-4  justify-center'>
+                    <h2 className='font-extrabold lg:text-lg '>{title}</h2>
+                    <p className='text-xs font-light lg:text-base/4'>{description}</p>
                 </div>
             </div>
         </div>

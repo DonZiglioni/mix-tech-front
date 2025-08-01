@@ -16,7 +16,7 @@ const workshopList = [
     {
         title: 'LIVE: Advanced Mix Techniques',
         image: '/lionLive.png',
-        description: 'This four-day live mix engineer training dives deep into finding inspiration, crafting melodies, song structures, and more.  Be confident in your ability to write amazing songs effortlessly.',
+        description: 'This four-day live mix engineer training dives deep into mixing while learning how to listen, reference mixes, and elevate your sonic quality to the next level.',
         link: `/workshop/mixtechniques1`,
     },
     {
