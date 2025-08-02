@@ -16,15 +16,18 @@
     "@radix-ui/react-accordion": "^1.2.11",
     "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/cli": "^4.1.11",
+    "axios": "^1.11.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.525.0",
     "motion": "^12.23.6",
     "next": "15.4.1",
     "react": "19.1.0",
+    "react-calendly": "^4.4.0",
     "react-dom": "19.1.0",
     "react-scroll-parallax": "^3.4.5",
     "simplex-noise": "^4.0.3",
+    "stripe": "^18.4.0",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {

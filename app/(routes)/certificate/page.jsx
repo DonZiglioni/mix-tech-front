@@ -6,6 +6,7 @@ import EnrollButtonReal from '../../_components/EnrollButtonReal'
 import { ParallaxBanner } from 'react-scroll-parallax'
 import BottomDivider from '../../_components/BottomDivider'
 import TopDivider from '../../_components/TopDivider'
+import axios from 'axios'
 
 const classSchedule = [
     {
@@ -93,7 +94,7 @@ const CertificatePage = () => {
                         </div>
                         <p className='mt-4'>
                             Start your journey into mixing and mastering by earning the Master of Mix Techniques certification.
-                            Learn the science of sound, get hands-on mixing experience, and earn the certification and demonstrate
+                            Learn the science of sound, get hands-on mixing experience, and earn the certification to demonstrate
                             your expertise to employers.
                         </p>
                         <div className='mt-4'>
@@ -102,7 +103,9 @@ const CertificatePage = () => {
                                 color='bg-slate-900/50'
                                 hoverBorder='hover:border-blue-800'
                                 hoverColor='hover:bg-slate-900/50'
-                                text="Apply Now" />
+                                text="Enroll Now"
+                                price_id='price_1RrlMxPBCHZfJi6WstWQ6Mkc'
+                            />
                         </div>
                     </div>
                     <div className=' w-[50%] hidden lg:flex flex-col items-center justify-center  '>
@@ -236,7 +239,9 @@ const CertificatePage = () => {
                                             color='bg-blue-900/50'
                                             hoverBorder='hover:border-teal-700'
                                             hoverColor='hover:bg-teal-900/50'
-                                            text="Apply Now" />
+                                            text="Enroll Now"
+                                            price_id='price_1RrlMxPBCHZfJi6WstWQ6Mkc'
+                                        />
                                     </div>
                                     <div className='font-extralight text-xs text-slate-600/80 text-center p-2'>
                                         Students, educators, active and former military, and first responders can save 20% on certifications and live training with proof of status. Please contact support@mixtechniques.com to receive a discount code.
@@ -266,7 +271,6 @@ const CertificatePage = () => {
                 </div>
             </div>
             <section className='h-auto bg-slate-900'>
-
                 <ParallaxBanner
                     layers={[
                         { image: '/studio3kstars.png', speed: 50 },
@@ -297,7 +301,6 @@ const CertificatePage = () => {
                         </ul>
                     </div>
                 </ParallaxBanner>
-
             </section>
             <div id='section4' className='h-auto w-full  flex items-center justify-center flex-col overflow-hidden relative'>
                 <div className='absolute bottom-0 left-0 h-auto w-full'>
@@ -324,9 +327,6 @@ const CertificatePage = () => {
                                     description={week.description}
                                 />
                             ))}
-
-
-
                         </div>
                     </div>
                 </div>
@@ -334,26 +334,6 @@ const CertificatePage = () => {
             <div id='faqs' className='h-auto w-full bg-black flex flex-col py-8 items-center p-4 lg:px-20 xl:px-60'>
                 <Faq />
             </div>
-            {/* <section className='h-auto bg-transparent'>
-                <div id='callout' className='h-80 w-full py-4  text-slate-200 flex flex-col items-center justify-evenly relative'>
-                    <img src='/wave-bg.jpg' className='h-full w-full object-cover absolute top-0 left-0 -z-10' />
-                    <div className='h-full w-full bg-black/50 object-cover absolute top-0 left-0 -z-10' />
-                    <h1 className='font-extrabold text-3xl md:text-4xl lg:text-5xl text-center text-shadow-lg text-shadow-black'>Ready to Get Started?</h1>
-                    <p className='text-light text-sm lg:text-lg text-shadow-lg text-shadow-black'>
-                        Your future in mixing is here.
-                    </p>
-
-                    <EnrollButtonReal
-                        borderColor='border-blue-900'
-                        color='bg-blue-900/50'
-                        hoverBorder='hover:border-teal-700'
-                        hoverColor='hover:bg-teal-900/50'
-                        text="Enroll Now"
-                    />
-
-                    <hr className='border-slate-200/50 w-[80%]' />
-                </div>
-            </section> */}
         </div>
     )
 }

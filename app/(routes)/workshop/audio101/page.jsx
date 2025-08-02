@@ -36,6 +36,7 @@ const Audio101Page = () => {
                                     hoverBorder='hover:border-blue-800'
                                     hoverColor='hover:bg-slate-900/50'
                                     text="Enroll Now"
+                                    price_id='price_1RrnU1PBCHZfJi6WebV2BCmw'
                                 />
                             </div>
                         </div>
@@ -122,7 +123,9 @@ const Audio101Page = () => {
                                             color='bg-blue-900/50'
                                             hoverBorder='hover:border-teal-700'
                                             hoverColor='hover:bg-teal-900/50'
-                                            text="Enroll Now" />
+                                            text="Enroll Now"
+                                            price_id='price_1RrnU1PBCHZfJi6WebV2BCmw'
+                                        />
                                     </div>
                                     <div className='font-extralight text-xs text-slate-600/80 text-center p-2'>
                                         Students, educators, active and former military, and first responders can save 20% on certifications and live training with proof of status. Please contact support@mixtechniques.com to receive a discount code.
@@ -271,7 +274,9 @@ const Audio101Page = () => {
                         color='bg-blue-900/50'
                         hoverBorder='hover:border-teal-700'
                         hoverColor='hover:bg-teal-900/50'
-                        text="Enroll Now" />
+                        text="Enroll Now"
+                        price_id='price_1RrnU1PBCHZfJi6WebV2BCmw'
+                    />
                 </div>
 
             </section>
