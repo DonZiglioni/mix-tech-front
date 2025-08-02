@@ -7,7 +7,7 @@ const CheckoutPage = async ({ params }) => {
     const router = useRouter();
     const { price_id } = await params;
 
-    const res = await axios.post(`https://mixtechniques.com/api/checkout/${price_id}`)
+    const res = await axios.post(`/api/checkout/${price_id}`)
     let success = res.data.url
     router.push(success);
 
