@@ -79,7 +79,7 @@ const LessonsPage = () => {
                                                 Please email us directly to introduce yourself and explain in detail the types of
                                                 lessons you're interested in taking.
                                             </p>
-                                            <p className='mt-4 text-2xl font-bold text-blue-400'>
+                                            <p className='mt-4 md:text-2xl text-xl font-bold text-blue-400'>
                                                 mentors@mixtechniques.com
                                             </p>
                                         </div>
@@ -92,6 +92,80 @@ const LessonsPage = () => {
                 <div className='absolute bottom-0  w-full '>
                     <TopDivider />
                 </div>
+            </section>
+            <section className='h-auto lg:px-60 md:px-20 px-4 py-8 text-slate-200 bg-black/50 relative'>
+                <img src={'black-bg1.png'} className='h-full w-full object-cover rotate-180 -z-50 absolute top-0 left-0' />
+                {/* <div className='absolute top-0 left-0 h-auto w-full'>
+                    <BottomDivider />
+                </div> */}
+
+                <h1 className='text-4xl  text-slate-200 text-center font-extrabold'>
+                    Meet Your Instructors
+                </h1>
+                <div className='h-auto  grid grid-cols-1 lg:grid-cols-2 my-4 border-2 bg-slate-200/10 border-blue-900/30 rounded-lg backdrop-blur-lg shadow-lg shadow-black'>
+                    <div className=' flex flex-col items-center justify-center h-auto p-4'>
+                        <div className=' h-full w-full rounded-lg py-4 shadow-md shadow-black  bg-slate-200/10'>
+                            <img className='h-50 w-50 place-self-center rounded-full ' src='/class3.png' />
+                        </div>
+                    </div>
+                    <div className='flex flex-col items-center justify-center p-4'>
+                        <div className='h-full w-full'>
+                            <h1 className='text-2xl font-bold'>
+                                Frank Azzaro
+                            </h1>
+                            <p className='italic text-md'>
+                                Mix Engineer, Audio Engineer and Director of Effortless Mastery
+                            </p>
+                            <p className='text-sm my-4'>
+                                Frank Azzaro has been envolved in the music industry from a very young age, climbed up the ladder,
+                                and has thousands of studio hours under his belt.  Whether you are just starting, or already climbing up the
+                                ladder yourself, Frank is confident and prepared to go above and beyond to help you make all of your
+                                dreams come true.
+                            </p>
+                            <EnrollButtonReal
+                                borderColor='border-blue-900'
+                                color='bg-slate-900/50'
+                                hoverBorder='hover:border-blue-800'
+                                hoverColor='hover:bg-slate-900/50'
+                                text="Book Now"
+                                link='https://mixtechniques.zohobookings.com/#/4738245000000043014'
+                            />
+
+                        </div>
+                    </div>
+                </div>
+                <div className='h-auto grid grid-cols-1 lg:grid-cols-2 my-4 bg-slate-200/10 border-2 border-blue-900/30 rounded-lg backdrop-blur-lg shadow-lg shadow-black'>
+                    <div className=' flex flex-col items-center justify-center h-auto p-4'>
+                        <div className=' h-full w-full rounded-lg py-4 shadow-md shadow-black  bg-slate-200/10'>
+                            <img className='h-50 w-50 place-self-center justify-self-center rounded-full ' src='/class3.png' />
+                        </div>
+                    </div>
+                    <div className='flex flex-col items-center justify-center p-4'>
+                        <div className='h-full w-full'>
+                            <h1 className='text-2xl font-bold'>
+                                Phil Mauro
+                            </h1>
+                            <p className='italic text-md'>
+                                Songwriter, Performer, Tour Manager, and Artist
+                            </p>
+                            <p className='text-sm my-4'>
+                                Phil Mauro has been envolved in the music industry from a very young age, climbed up the ladder,
+                                and has thousands of studio hours under his belt.  Whether you are just starting, or already climbing up the
+                                ladder yourself, Phil is confident and prepared to go above and beyond to help you make all of your
+                                dreams come true.
+                            </p>
+                            <EnrollButtonReal
+                                borderColor='border-blue-900'
+                                color='bg-slate-900/50'
+                                hoverBorder='hover:border-blue-800'
+                                hoverColor='hover:bg-slate-900/50'
+                                text="Book Now"
+                                link='https://mixtechniques.zohobookings.com/#/4738245000000043014'
+                            />
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
     )
